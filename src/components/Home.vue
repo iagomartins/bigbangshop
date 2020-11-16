@@ -4,15 +4,20 @@
     <div class="title-section">
         <h1>Nossos Produtos</h1>
     </div>
+    <div class="container our-products">
+        <CompanyCard img="../assets/BigShop.png" title="BIG SHOP" msg="Crie sua própria loja online" link="#" />
+    </div>
 </div>
 </template>
 <script>
 import BannerTop from '../components/BannerTop.vue'
+import CompanyCard from '../components/CompanyCard.vue'
 
 export default {
     name: 'Home',
     components: {
-        BannerTop
+        BannerTop,
+        CompanyCard
     }
 }
 </script>
