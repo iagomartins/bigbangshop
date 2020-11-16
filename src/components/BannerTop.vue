@@ -5,7 +5,6 @@
         <a href="#" class="link-banner">Conheça nossos produtos e serviços</a>
         <p>Já é cliente Big Bang? <a href="#">Acesse a Área do Cliente.</a></p>
       </div>
-
   </div>
 </template>
 
@@ -17,10 +16,11 @@ export default {
 
 <style scoped>
     .banner-top {
-        width: 100%;
-        display: block;
-        float: left;
-    } 
+        width: 100vw;
+        height: 67vh;
+        background-size: 100%;
+        margin-bottom: 85px;
+    }
     .banner-top h1, .banner-top p {
         color: #fff;
     }

@@ -109,6 +109,7 @@ a {
   position: fixed;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   width: 100vw;
+  top: 0;
 }
 .menu-container {
     width: 100%;

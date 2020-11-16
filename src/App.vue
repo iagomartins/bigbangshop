@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <BannerTop/>
+    <router-view></router-view>
     <Email/>
     <Footer/>
   </div>
@@ -9,7 +9,6 @@
 
 <script>
 import Header from './components/Header.vue'
-import BannerTop from './components/BannerTop.vue'
 import Email from './components/Email.vue'
 import Footer from './components/Footer.vue'
 
@@ -17,7 +16,6 @@ export default {
   name: 'App',
   components: {
     Header,
-    BannerTop,
     Email,
     Footer
   }
