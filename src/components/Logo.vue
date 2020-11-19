@@ -12,7 +12,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@media (min-width: 1200px) {
   .logo {
     margin-right: 40px;
   }
+}
+
 </style>

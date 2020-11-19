@@ -87,9 +87,10 @@ export default {
   }
   .logo-social {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    min-height: 130px;
   }
   .social-media {
     display: flex;
@@ -121,15 +122,17 @@ export default {
   }
   .institucionais {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
   .inst-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     color: #1c1c1c;
     font-size: 16px;
+    margin-bottom: 20px;
   }
   .inst-column a, .inst-column span {
     color: #3D3D3D;
@@ -183,13 +186,15 @@ export default {
     font-size: 12px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
   .info p {
     margin-bottom: 0;
   }
   .politicas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
@@ -209,5 +214,27 @@ export default {
   i.fas.fa-circle {
     font-size: 6px;
     color: #2351ff;
+  }
+  @media (min-width: 1200px) {
+    .institucionais {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .inst-column {
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+    .logo-social {
+      flex-direction: row;
+      min-height: 0px;
+    }
+    .politicas {
+      display: flex;
+      flex-direction: row;
+    }
+    .info {      
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
   }
 </style>

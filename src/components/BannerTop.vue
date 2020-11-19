@@ -1,6 +1,6 @@
 <template>
   <div class="banner-top">
-      <div class="container">
+      <div class="container desktop">
         <h1>Soluções completas em e-commerce e tecnologia</h1>
         <a href="#" class="link-banner">Conheça nossos produtos e serviços</a>
         <p>Já é cliente Big Bang? <a href="#">Acesse a Área do Cliente.</a></p>
@@ -15,11 +15,12 @@ export default {
 </script>
 
 <style scoped>
+    .desktop {
+        display: none;
+    }
     .banner-top {
-        width: 100vw;
-        height: 67vh;
-        background-size: 100%;
         margin-bottom: 85px;
+        margin-top: 135px;
     }
     .banner-top h1, .banner-top p {
         color: #fff;
@@ -30,6 +31,8 @@ export default {
     .banner-top h1 {
         max-width: 50%;
         margin-bottom: 30px;
+        font-size: 40px;
+        line-height: 44px;
         font-weight: 600;
     }
     .link-banner {
@@ -43,16 +46,34 @@ export default {
         margin-bottom: 30px;
     }
     @media (min-width: 1200px) {
+        .desktop {
+            display: block;
+        }
+        .banner-top h1 {
+            font-size: 40px;
+            line-height: 44px;
+        }
+        .banner-top {
+            margin-top: 134px;
+            background-image: url('../assets/Home/banner-topo-desktop.png');
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 66.7vh;
+        }
+        .banner-top .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+    @media (min-width: 1920px) {
         .banner-top h1 {
             font-size: 56px;
             line-height: 64px;
         }
         .banner-top {
-            margin-top: 134px;
-            background-image: url(../assets/banner-topo-desktop.png);
-            background-repeat: no-repeat;
-            padding-top: 14vh;
-            padding-bottom: 14vh;
+            background-size: 100%;
         }
     }
 </style>
