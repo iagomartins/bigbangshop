@@ -21,7 +21,7 @@
               <img src="../assets/Home/placeholder-photo.png" alt="">
           </div>
           <div class="content">
-              <strong>Nome e sobrenome</strong>
+              <strong>Iago e sobrenome</strong>
               <div class="cargo">
                   <span>Cargo</span><i class="fas fa-circle"></i><span>Empresa</span>
               </div>
@@ -71,39 +71,44 @@
     components: { VueSlickCarousel },
     data() {
       return {
-        settings: {
+         settings: {
             arrows: true,
             dots: true,
-            "centerMode": true,
-            "centerPadding": "20px",
-            "focusOnSelect": true,
-            "infinite": true,
-            "slidesToShow": 3,
-            "speed": 500,
-            "responsive": [
+            centerMode: true,
+            centerPadding: "40px",
+            focusOnSelect: true,
+            infinite: true,
+            slidesToShow: 3,
+            speed: 500,
+            index: 2,
+            responsive: [
                 {
                 "breakpoint": 1024,
                 "settings": {
-                    "slidesToShow": 3,
-                    "slidesToScroll": 1,
-                    "infinite": true,
-                    "dots": true
-                }
+                    centerMode: true,
+                    centerPadding: '20px',
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                    }
                 },
                 {
                 "breakpoint": 600,
                 "settings": {
+                    "centerMode": true,
+                    centerPadding: '10px',
                     "slidesToShow": 2,
                     "slidesToScroll": 1,
                     "initialSlide": 1
-                }
+                    }
                 },
                 {
                 "breakpoint": 480,
                 "settings": {
                     "slidesToShow": 1,
                     "slidesToScroll": 1
-                }
+                    }
                 }
             ]
         },
@@ -111,6 +116,7 @@
     }
   }
 </script>
+
 
 <style scoped>
     .slick-depoimentos {
