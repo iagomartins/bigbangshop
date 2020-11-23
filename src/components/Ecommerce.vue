@@ -14,6 +14,18 @@
         <div class="title-section">
             <h2>Vantagens e recursos do nosso e-commerce</h2>
         </div>
+        <EcommerceGrid/>
+    </section>
+    <section class="center-section">
+        <EcommerceComponent title="Loja Start" 
+        msg="Loja online com todos os principais recursos, alta performance e preço acessível. Ideal para quem está começando a vender pela internet."
+        linkMsg="Saiba mais sobre a Loja Start" link="#"/>
+        <EcommerceComponent title="Full Commerce" 
+        msg="Loja online com todos os principais recursos, alta performance e preço acessível. Ideal para quem está começando a vender pela internet."
+        linkMsg="Saiba mais sobre a Full Commerce" link="#"/>
+        <EcommerceComponent title="Maketplace" 
+        msg="Loja online com todos os principais recursos, alta performance e preço acessível. Ideal para quem está começando a vender pela internet."
+        linkMsg="Saiba mais sobre o Maketplace" link="#"/>
     </section>
   </div>
 </template>
@@ -22,13 +34,17 @@
 import Breadcrumb from "../components/Breadcrumb.vue";
 import BannerTopEcommerce from "../components/BannerTopEcommerce.vue";
 import MiddleSectionCommerce from '../components/MiddleSectionCommerce.vue';
+import EcommerceGrid from '../components/EcommerceGrid.vue'
+import EcommerceComponent from '../components/EcommerceComponent.vue'
 
 export default {
   name: "Ecommerce",
   components: {
     Breadcrumb,
     BannerTopEcommerce,
-    MiddleSectionCommerce
+    MiddleSectionCommerce,
+    EcommerceGrid,
+    EcommerceComponent
   },
 };
 </script>
