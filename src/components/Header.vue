@@ -5,7 +5,7 @@
       <div class="row">
       <a href="#" class="nossos-produtos">Nossos Produtos<img class="menu-dots" src="../assets/dots.svg" alt=""></a>
       <div class="item-menu">
-        <span>Ecommerce</span>
+        <router-link to="/ecommerce" class="primary-link">Ecommerce</router-link>
           <div class="submenu">
             <a href="#">
               <span class="link-titulo">Loja Start</span>
@@ -248,6 +248,9 @@ a {
   border-radius: 8px;
   background: #fff;
   z-index: 999;
+}
+.item-menu a {
+  margin-right: 0 !important;
 }
 .link-titulo {
   color: #1C1C1C;

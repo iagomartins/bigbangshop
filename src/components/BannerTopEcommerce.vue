@@ -21,8 +21,9 @@ export default {
     }    
     .banner-ecommerce {
         width: 100vw;
-        height: 800px;
+        height: 86.5vh;
         background-image: url('../assets/Ecommerce/banner-top-ecommerce.png');
+        background-repeat: no-repeat;
     }
     .container {
         height: 100%;
@@ -52,6 +53,9 @@ export default {
     @media (min-width: 1920px) {
         .container h1 {
             font-size: 56px;
+        }
+        .banner-ecommerce {
+            background-size: 100%;
         }
     }
 </style>

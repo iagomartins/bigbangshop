@@ -27,6 +27,10 @@
         msg="Loja online com todos os principais recursos, alta performance e preço acessível. Ideal para quem está começando a vender pela internet."
         linkMsg="Saiba mais sobre o Maketplace" link="#"/>
     </section>
+    <BannerFooterEcommerce/>
+    <Technology/>
+    <Prices/>
+    <Consulting/>
   </div>
 </template>
 
@@ -36,6 +40,10 @@ import BannerTopEcommerce from "../components/BannerTopEcommerce.vue";
 import MiddleSectionCommerce from '../components/MiddleSectionCommerce.vue';
 import EcommerceGrid from '../components/EcommerceGrid.vue'
 import EcommerceComponent from '../components/EcommerceComponent.vue'
+import BannerFooterEcommerce from '../components/BannerFooterEcommerce.vue'
+import Technology from '../components/Technology.vue'
+import Prices from '../components/Prices.vue'
+import Consulting from '../components/Consulting.vue'
 
 export default {
   name: "Ecommerce",
@@ -44,7 +52,11 @@ export default {
     BannerTopEcommerce,
     MiddleSectionCommerce,
     EcommerceGrid,
-    EcommerceComponent
+    EcommerceComponent,
+    BannerFooterEcommerce,
+    Technology,
+    Prices,
+    Consulting
   },
 };
 </script>

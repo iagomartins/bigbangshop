@@ -227,6 +227,7 @@ export default {
     .logo-social {
       flex-direction: row;
       min-height: 0px;
+      width: 100%;
     }
     .politicas {
       display: flex;
