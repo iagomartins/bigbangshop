@@ -1,5 +1,6 @@
 <template>
 <div>
+    <Header />
     <BannerTop/>
     <div class="title-section">
         <h1>Nossos Produtos</h1>
@@ -19,10 +20,11 @@
     <LowerSection/>
     <SlickCarousel/>
     <Clients/>
-    <Blog/>
+    <BlogHome/>
 </div>
 </template>
 <script>
+import Header from '../components/Header.vue'
 import BannerTop from '../components/BannerTop.vue'
 import CompanyCard from '../components/CompanyCard.vue'
 import BannerCenter from '../components/BannerCenter.vue'
@@ -31,11 +33,12 @@ import BannerFooter from '../components/BannerFooter.vue'
 import LowerSection from '../components/LowerSection.vue'
 import SlickCarousel from '../components/SlickCarousel.vue'
 import Clients from '../components/Clients.vue'
-import Blog from '../components/Blog.vue'
+import BlogHome from '../components/BlogHome.vue'
 
 export default {
     name: 'Home',
     components: {
+        Header,
         BannerTop,
         CompanyCard,
         BannerCenter,
@@ -44,7 +47,7 @@ export default {
         LowerSection,
         SlickCarousel,
         Clients,
-        Blog
+        BlogHome
     }
 }
 </script>

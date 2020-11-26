@@ -7,18 +7,18 @@
       <div class="item-menu">
         <router-link to="/ecommerce" class="primary-link">Ecommerce</router-link>
           <div class="submenu">
-            <a href="#">
+            <router-link to="/ecommerce/lojastart">
               <span class="link-titulo">Loja Start</span>
               <span class="link-subtitulo">Para quem está começando</span>
-            </a>
-            <a href="#">
+            </router-link>
+            <router-link to="/ecommerce/fullcommerce">
               <span class="link-titulo">Full Commerce</span>
               <span class="link-subtitulo">Solução completa e poderosa</span>
-            </a>
-            <a href="#">
+            </router-link>
+            <router-link to="/ecommerce/marketplace">
               <span class="link-titulo">Marketplace</span>
               <span class="link-subtitulo">Venda nos principais sites</span>
-            </a>
+            </router-link>
             <a href="#">
               <span class="link-titulo"><span style="float:left;">Big Shop</span><span class="etiqueta-novo">NOVO!</span></span>
               <span class="link-subtitulo">Para quem está começando</span>
@@ -26,20 +26,20 @@
           </div>
       </div>
       <div class="item-menu">
-        <span>Tecnologia</span>
+        <router-link to="/tecnologia" class="primary-link">Tecnologia</router-link>
           <div class="submenu">
-            <a href="#">
+            <router-link to="/tecnologia/appdevelopment">
               <span class="link-titulo">App Development</span>
               <span class="link-subtitulo">Desenvolvimento completo de apps</span>
-            </a>
-            <a href="#">
+            </router-link>
+            <router-link to="/tecnologia/sistemasweb">
               <span class="link-titulo">Sistemas Web</span>
               <span class="link-subtitulo">Sistemas automatizados na nuvem</span>
-            </a>
-            <a href="#">
+            </router-link>
+            <router-link to="/tecnologia/sitesinstitucionais">
               <span class="link-titulo">Sites Institucionais</span>
               <span class="link-subtitulo">Sua empresa na internet</span>
-            </a>
+            </router-link>
             <a href="#">
               <span class="link-titulo"><span style="float:left;">Pago agora</span><span class="etiqueta-novo">NOVO!</span></span>
               <span class="link-subtitulo">Gere boletos com a menor taxa</span>
@@ -47,7 +47,7 @@
           </div>
       </div>
       <a href="#" class="nossos-produtos">Cases</a>
-      <a href="#" class="nossos-produtos">Blog</a>
+      <router-link to="/blog" class="nossos-produtos">Blog</router-link>
       <div class="item-menu">
         <span>Atendimento</span>
           <div class="submenu">
@@ -88,18 +88,18 @@
                   Ecommerce
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item submenu-item" href="#">
+                  <router-link class="dropdown-item submenu-item" to="/ecommerce/lojastart">
                     <span class="link-titulo">Loja Start</span>
                     <span class="link-subtitulo">Para quem está começando</span>
-                  </a>
-                  <a class="dropdown-item submenu-item" href="#">
+                  </router-link>
+                  <router-link class="dropdown-item submenu-item" to="/ecommerce/fullcommerce">
                     <span class="link-titulo">Full Commerce</span>
                     <span class="link-subtitulo">Solução completa e poderosa</span>
-                  </a>                  
-                  <a class="dropdown-item submenu-item" href="#">
+                  </router-link>                  
+                  <router-link class="dropdown-item submenu-item" href="/ecommerce/marketplace">
                     <span class="link-titulo">Marketplace</span>
                     <span class="link-subtitulo">Venda nos principais sites</span>
-                  </a>
+                  </router-link>
                   <a class="dropdown-item submenu-item" href="#">
                     <span class="link-titulo"><span style="float:left;">Big Shop</span><span class="etiqueta-novo">NOVO!</span></span>
                     <span class="link-subtitulo">Para quem está começando</span>
@@ -111,10 +111,10 @@
                   Tecnologia
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item submenu-item" href="#">
+                  <router-link class="dropdown-item submenu-item" to="/tecnologia/appdevelopment">
                     <span class="link-titulo">App Development</span>
                     <span class="link-subtitulo">Desenvolvimento completo de apps</span>
-                  </a>
+                  </router-link>
                   <a class="dropdown-item submenu-item" href="#">
                     <span class="link-titulo">Sistemas Web</span>
                     <span class="link-subtitulo">Sistemas automatizados na nuvem</span>

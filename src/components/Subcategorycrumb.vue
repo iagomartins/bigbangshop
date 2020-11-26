@@ -1,16 +1,19 @@
 <template>
     <div class="container">
         <div class="bread">
-            <router-link to="/">Home</router-link><i class="fas fa-chevron-right"></i><span>{{ page }}</span>
+            <router-link to="/">Home</router-link><i class="fas fa-chevron-right"></i>
+            <router-link :to="prevLink" class="previous">{{ previous }}</router-link><i class="fas fa-chevron-right"></i><span>{{ page }}</span>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Breadcrumb',
+    name: 'Subcategorycrumb',
     props: {
-        page: String
+        page: String,
+        previous: String,
+        prevLink: String
     }
 }
 </script>
@@ -36,5 +39,8 @@ export default {
     }
     i.fas.fa-chevron-right {
         color: #2351FF;
+    }
+    .previous {
+        margin-left: 5px;
     }
 </style>

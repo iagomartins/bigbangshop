@@ -60,14 +60,13 @@
 
 <script>
 export default {
-    name: 'Consulting'
+    name: 'ConsultingCommerce'
 }
 </script>
 
 <style scoped>
     .consulting {
         width: 100vw;
-        background-color: #F3F3F3;
     }
     .container {
         display: flex;

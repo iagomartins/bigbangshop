@@ -1,10 +1,7 @@
 <template>
   <div>
-    <div class="ecommerce">
-      <div class="container">
-        <h1 class="page-title">E-Commerce</h1>
-      </div>
-    </div>
+    <Header/>
+    <PageTitle title="E-Commerce"/>
     <Breadcrumb page="E-Commerce" />
     <BannerTopEcommerce/>
     <div class="middle-section">
@@ -35,6 +32,8 @@
 </template>
 
 <script>
+import Header from '../components/Header.vue'
+import PageTitle from '../components/PageTitle.vue'
 import Breadcrumb from "../components/Breadcrumb.vue";
 import BannerTopEcommerce from "../components/BannerTopEcommerce.vue";
 import MiddleSectionCommerce from '../components/MiddleSectionCommerce.vue';
@@ -48,6 +47,8 @@ import Consulting from '../components/Consulting.vue'
 export default {
   name: "Ecommerce",
   components: {
+    Header,
+    PageTitle,
     Breadcrumb,
     BannerTopEcommerce,
     MiddleSectionCommerce,

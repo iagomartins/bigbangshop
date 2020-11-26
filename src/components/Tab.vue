@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isSelected">
+    <div v-if="isSelected" class="image-tab">
         <slot></slot>
     </div>
 </template>
@@ -14,6 +14,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    @media (min-width: 1200px) {
+        .image-tab {
+            max-width: 50%;
+            margin-left: 50px;
+        }
+    }
 </style>

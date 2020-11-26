@@ -10,7 +10,9 @@
                             'Gerencie tudo através do nosso app',
                             'Gerencie tudo'
                         ]"
-                        :selected="selected" @selected="setSelected">
+                        :selected="selected" @selected="setSelected" :stores=true
+                        title="Tecnologia para gerir o seu negócio" 
+                        subtitle="Junte-se a dezenas de pessoas e tenha controle total da sua loja, vendas, estoque, promoçõe e muito mais!">
                         <Tab :isSelected="selected === 'Gerencie tudo através do nosso app exclusivo'">
                             <div class="image">
                                 <img src="../assets/Ecommerce/cell-phone.png" alt="">

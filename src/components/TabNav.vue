@@ -1,14 +1,14 @@
 <template>
     <div class="tabs-component">
         <ul class="nav nav-tabs">
-            <h2>Tecnologia para gerir o seu negócio</h2>
-            <p>Junte-se a dezenas de pessoas e tenha controle total da sua loja, vendas, estoque, promoçõe e muito mais!</p>
+            <h2>{{ title }}</h2>
+            <p>{{ subtitle }}</p>
             <li v-for="tab in tabs" :key="tab" class="nav-item">
                 <a class="nav-link" :class="{ active: tab === selected }" @click="setTab(tab)">
                     {{ tab }} <i class="fas fa-chevron-right"></i>
                 </a>
             </li>
-            <div class="stores">
+            <div v-if="stores === true" class="stores">
                 <a href="#">
                     <img src="../assets/Ecommerce/google-play.svg" alt="">
                 </a>
@@ -31,7 +31,10 @@ export default {
         selected: {
             type: String,
             required: true,
-        }
+        },
+        title: String,
+        subtitle: String,
+        stores: Boolean
     },
     methods: {
         setTab(tab) {
