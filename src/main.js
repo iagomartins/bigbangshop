@@ -11,6 +11,7 @@ import AppDevelopment from './components/AppDevelopment.vue'
 import SistemasWeb from './components/SistemasWeb.vue'
 import SitesInstitucionais from './components/SitesInstitucionais.vue'
 import Blog from './components/Blog.vue'
+import BlogPostPage from './components/BlogPostPage.vue'
 
 Vue.use(VueRouter);
 
@@ -55,6 +56,10 @@ const router = new VueRouter({
     {
       path: '/blog',
       component: Blog
+    },
+    {
+      path: '/blog/blogpost',
+      component: BlogPostPage
     }
   ]
 })

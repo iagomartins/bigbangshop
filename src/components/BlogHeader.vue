@@ -39,12 +39,23 @@ export default {
 </script>
 
 <style scoped>
+    .logo {
+        padding-right: 10px;
+    }
+    .navbar-nav {
+        margin-bottom: 32px;
+    }
     .collapse.navbar-collapse {
         max-width: 750px;
     }
     .blog-header {
+        position: fixed;
+        background: #fff;
         padding: 35px 3vw;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        width: 100vw;
+        top: 0;
+        z-index: 9;
     }
     .header {
         display: flex;
@@ -54,23 +65,32 @@ export default {
     }
     .blog-logo {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .logo-big {
         border-right: 1px solid #DEDEDE;
         margin-right: 16px;
+        margin-bottom: 24px;
     }
     .blog-title {
         font-weight: 600;
         font-size: 36px;
         line-height: 44px;
         color: #2351FF;
+        margin-bottom: 24px;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 24px;
         padding-left: 24px;
         color: #3D3D3D;
+    }
+    .search-input {
+        position: relative;
+        display: none;
+    }
+    .show + .search-input {
+        display: block;
     }
     .search-input input {
         border: 2px solid #C4C4C4;
@@ -91,10 +111,19 @@ export default {
         background-size: 100%;
         background-position: center;
         z-index: 9;
-        right: 30px;
-        top: 24px;
+        right: 15px;
+        top: 18px;
     }
     @media (min-width: 1200px) {
-        
+        .blog-logo {
+            flex-direction: row;
+            align-items: center;
+        }
+        .logo-big, .blog-title, .navbar-nav {
+            margin-bottom: 0;
+        }
+        .search-input {
+            display: block;
+        }
     }
 </style>
