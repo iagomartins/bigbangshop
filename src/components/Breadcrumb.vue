@@ -26,6 +26,7 @@ export default {
         padding-bottom: 8px;
         border-bottom: 1px solid #DEDEDE;
         margin-bottom: 80px;
+        width: 100%;
     }
     .bread a {
         margin-right: 5px;

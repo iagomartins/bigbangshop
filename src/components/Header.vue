@@ -2,7 +2,7 @@
   <div class="menu">
     <div class="menu-container desktop">
       <Logo/>
-      <div class="row">
+      <div class="row menu-content">
       <a href="#" class="nossos-produtos">Nossos Produtos<img class="menu-dots" src="../assets/dots.svg" alt=""></a>
       <div class="item-menu">
         <router-link to="/ecommerce" class="primary-link">Ecommerce</router-link>
@@ -49,7 +49,7 @@
       <a href="#" class="nossos-produtos">Cases</a>
       <router-link to="/blog" class="nossos-produtos">Blog</router-link>
       <div class="item-menu">
-        <span>Atendimento</span>
+        <router-link to="/atendimento">Atendimento</router-link>
           <div class="submenu">
             <a href="#">
               <span class="link-titulo">Help Desk</span>
@@ -218,25 +218,12 @@ a {
 }
 .menu div a, .item-menu {
   margin-right: 40px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #3D3D3D;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
-}
-.submenu {
-  height: 0;
-  opacity: 0;
-  transition: all 0.4s;
-  position: absolute;
-  transform: translateX(-30%);
-  top: 100px;
-}
-.submenu a {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0 !important;
-  margin-bottom: 15px;
+  position: relative;
 }
 .item-menu:hover .submenu {
   display: flex;
@@ -248,6 +235,33 @@ a {
   border-radius: 8px;
   background: #fff;
   z-index: 999;
+  animation: rotateMenu 400ms ease-in-out forwards;
+  transform-origin: top center;
+  transform: translateX(-30%);
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 261px;
+  left: -95%;
+}
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg)
+    }
+    70% {
+        transform: rotateX(20deg) 
+    }
+    100% {
+        transform: rotateX(0deg) 
+    }
+}
+.submenu a {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0 !important;
+  margin-bottom: 15px;
 }
 .item-menu a {
   margin-right: 0 !important;

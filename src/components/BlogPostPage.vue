@@ -85,17 +85,55 @@
                         <a href="#" class="tag-btn">Tendências</a>
                         <a href="#" class="tag-btn">Tendências</a>
                     </div>
+                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5" data-width=""></div>
                 </div>
                 <div class="consult-form">
                     <div class="form-title">
                         <h2>Fale com um consultor</h2>
                     </div>
-                    <form action="#" method="post">
-
+                    <form action="#" method="post" class="contact-form">
+                        <input type="text" class="form-input" placeholder="Seu nome">
+                        <input type="text" class="form-input" placeholder="Seu e-mail">
+                        <input type="text" class="form-input" placeholder="Seu telefone">
+                        <input type="submit" value="Receber contato" class="btn btn-primary btn-submit">
                     </form>
                 </div>
-            </div>
+            </div>            
         </div>
+        <section class="related-posts">
+            <div class="container">
+                <h2 class="banner-title">Posts relacionados</h2>
+            </div>
+            <div class="container">
+                <a href="#" class="blog-item">
+                    <div class="blog-img">
+                        <img src="../assets/Blog/post-img1.png">
+                    </div>
+                    <div class="blog-text">
+                        <strong>O novo normal: como os lojistas devem se preparar e os desafios a longo prazo</strong>
+                        <p>01 jan 2020</p>
+                    </div>
+                </a>
+                <a href="#" class="blog-item">
+                    <div class="blog-img">
+                        <img src="../assets/Blog/post-img2.png">
+                    </div>
+                    <div class="blog-text">
+                        <strong>Guia completo: como desenvolver um planejamento de vendas anual?</strong>
+                        <p>01 jan 2020</p>
+                    </div>
+                </a>
+                <a href="#" class="blog-item">
+                    <div class="blog-img">
+                        <img src="../assets/Blog/post-img3.png">
+                    </div>
+                    <div class="blog-text">
+                        <strong>Calendário do E-Commerce 2020: as melhores datas para vender online</strong>
+                        <p>01 jan 2020</p>
+                    </div>
+                </a>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -126,7 +164,7 @@ export default {
     .margin-top-header {
         display: block;
         width: 100vw;
-        margin-top: 218px;
+        margin-top: 240px;
     }
     .date, .author {
         font-size: 16px;
@@ -158,7 +196,7 @@ export default {
     }
     .social-media {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background: #fff;
         border-radius: 8px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
@@ -168,18 +206,25 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 100px;
     }
     .text-content {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 100%;
     }
     .text-image {
         margin-bottom: 40px;
         border-radius: 8px;
+        max-width: 100%;
+    }
+    .text-image img {
+        max-width: 100%;
     }
     .text-content h2 {
         margin-bottom: 24px;
+        color: #1c1c1c;
     }
     .text-content p {
         margin-bottom: 40px;
@@ -204,9 +249,92 @@ export default {
         padding: 8px;
         margin: 0 8px;
     }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+    }
+    .form-title {
+        padding: 24px;
+        border-bottom: 1px solid #dedede;
+    }
+    .form-title h2 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0;
+    }
+    input.form-input {
+        border: 1px solid #2351FF;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        height: 52px;
+        padding-left: 16px;
+    }
+    .btn-submit {
+        height: 52px;
+        background-color: #2351FF;
+    }
+    .consult-form {
+        background: #fff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        margin-bottom: 60px;
+    }
+    .blog-item {
+        max-width: 310px;
+    }
+    .blog-img {
+        margin-bottom: 24px;
+        border-radius: 8px;
+    }
+    .blog-img img {
+        max-width: 100%;
+    }
+    .blog-text strong {
+        margin-bottom: 16px;
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .blog-text p {
+        font-size: 14px;
+        color: #fff;
+    }
+    .related-posts {
+        background: #2351ff;
+        padding: 80px 0;
+    }
+    section.related-posts .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-title {
+        color: #fff;
+        margin-bottom: 48px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+    }
     @media (min-width: 1200px) {
         .margin-top-header {
             margin-top: 190px;
+        }
+        .post-content {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .text-content {
+            max-width: 590px;
+            align-items: flex-start;
+        }
+        section.related-posts .container {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
         }
     }
 </style>

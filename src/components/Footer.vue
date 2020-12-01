@@ -13,41 +13,41 @@
       </div>
       <div class="container institucionais border-bottom pb-3 mb-3">
         <div class="inst-column">
-          <strong class="mb-3">Nossas Soluções</strong>
+          <a href="#" class="mb-3 inst-title">Nossas Soluções</a>
           <a href="#" class="mb-2">Big Shop</a>
           <a href="#" class="mb-2">Big Bang Track</a>
           <a href="#" class="mb-2">Curta & Compre</a>
           <a href="#" class="mb-2">Pago Agora</a>
         </div>
         <div class="inst-column">
-          <strong class="mb-3">E-Commerce</strong>
-          <a href="#" class="mb-2">Loja Start</a>
-          <a href="#" class="mb-2">Full Commerce</a>
-          <a href="#" class="mb-2">Marketplace</a>
+          <router-link to="/ecommerce" class="mb-3 inst-title">E-Commerce</router-link>
+          <router-link to="/ecommerce/lojastart" class="mb-2">Loja Start</router-link>
+          <router-link to="/ecommerce/fullcommerce" class="mb-2">Full Commerce</router-link>
+          <router-link to="/ecommerce/marketplace" class="mb-2">Marketplace</router-link>
         </div>
         <div class="inst-column">
-          <strong class="mb-3">Tecnologia</strong>
-          <a href="#" class="mb-2">App Development</a>
-          <a href="#" class="mb-2">Sistemas Web</a>
-          <a href="#" class="mb-2">Sites Institucionais</a>
+          <router-link to="/tecnologia" class="mb-3 inst-title">Tecnologia</router-link>
+          <router-link to="/tecnologia/appdevelopment" class="mb-2">App Development</router-link>
+          <router-link to="/tecnologia/sistemasweb" class="mb-2">Sistemas Web</router-link>
+          <router-link to="/tecnologia/sitesinstitucionais" class="mb-2">Sites Institucionais</router-link>
         </div>
         <div class="inst-column">
-          <strong class="mb-3">Atendimento</strong>
+          <router-link to="/atendimento" class="mb-3 inst-title">Atendimento</router-link>
           <a href="#" class="mb-2">Help Desk</a>
           <a href="#" class="mb-2">Central de Ajuda</a>
           <a href="#" class="mb-2">Perguntas Frequentes</a>
           <a href="#" class="mb-2">Contato</a>
         </div>
         <div class="inst-column">
-          <strong class="mb-3">Institucional</strong>
-          <a href="#" class="mb-2">Quem Somos</a>
-          <a href="#" class="mb-2">Blog</a>
+          <strong class="mb-3 inst-title">Institucional</strong>
+          <router-link to="/quemsomos" class="mb-2">Quem Somos</router-link>
+          <router-link to="/blog" class="mb-2">Blog</router-link>
           <a href="#" class="mb-2">Cases e Clientes</a>
-          <a href="#" class="mb-2">Carreiras</a>
+          <router-link to="/carreiras" class="mb-2">Carreiras</router-link>
           <a href="#" class="mb-2">Materiais</a>
         </div>
         <div class="inst-column">
-          <strong class="mb-3">Entre em Contato</strong>
+          <strong class="mb-3 inst-title">Entre em Contato</strong>
           <span class="mb-2 whatsapp">(31) 9 7853 4488</span>
           <span class="mb-2 mail">contato@bigbangshop.com.br</span>
           <span class="mb-2 phone">4004 3320</span>
@@ -137,6 +137,11 @@ export default {
   .inst-column a, .inst-column span {
     color: #3D3D3D;
     font-size: 14px;
+  }
+  .inst-column .inst-title {
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 800;
   }
   .whatsapp::before {
     content: '';

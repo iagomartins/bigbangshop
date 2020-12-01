@@ -12,6 +12,9 @@ import SistemasWeb from './components/SistemasWeb.vue'
 import SitesInstitucionais from './components/SitesInstitucionais.vue'
 import Blog from './components/Blog.vue'
 import BlogPostPage from './components/BlogPostPage.vue'
+import Atendimento from './components/Atendimento.vue'
+import Carreiras from './components/Carreiras.vue'
+import QuemSomos from './components/QuemSomos.vue'
 
 Vue.use(VueRouter);
 
@@ -60,6 +63,18 @@ const router = new VueRouter({
     {
       path: '/blog/blogpost',
       component: BlogPostPage
+    },
+    {
+      path: '/atendimento',
+      component: Atendimento
+    },
+    {
+      path: '/carreiras',
+      component: Carreiras
+    },
+    {
+      path: '/quemsomos',
+      component: QuemSomos
     }
   ]
 })
