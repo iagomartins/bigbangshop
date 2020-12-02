@@ -60,9 +60,9 @@
           <p>CNPJ: 21.306.310/0001-09. Av. Raja Gabáglia, 3.320, 5º andar, Estoril, Belo Horizonte - MG.</p>
         </div>
         <div class="info-links">
-          <a href="#">Termos de Uso</a><i class="fas fa-circle"></i>
-          <a href="#">Política de Privacidade</a><i class="fas fa-circle"></i>
-          <a href="#">Uso de Cookies</a>
+          <router-link to="/textoslegais">Termos de Uso</router-link><i class="fas fa-circle"></i>
+          <router-link to="/textoslegais">Política de Privacidade</router-link><i class="fas fa-circle"></i>
+          <router-link to="/textoslegais">Uso de Cookies</router-link>
         </div>
       </div>
   </div>

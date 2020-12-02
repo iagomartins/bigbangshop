@@ -15,6 +15,7 @@ import BlogPostPage from './components/BlogPostPage.vue'
 import Atendimento from './components/Atendimento.vue'
 import Carreiras from './components/Carreiras.vue'
 import QuemSomos from './components/QuemSomos.vue'
+import TextosLegais from './components/TextosLegais.vue'
 
 Vue.use(VueRouter);
 
@@ -75,6 +76,10 @@ const router = new VueRouter({
     {
       path: '/quemsomos',
       component: QuemSomos
+    },
+    {
+      path: '/textoslegais',
+      component: TextosLegais
     }
   ]
 })
