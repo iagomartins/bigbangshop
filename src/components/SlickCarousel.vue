@@ -21,7 +21,7 @@
               <img src="../assets/Home/placeholder-photo.png" alt="">
           </div>
           <div class="content">
-              <strong>Iago e sobrenome</strong>
+              <strong>Nome e sobrenome</strong>
               <div class="cargo">
                   <span>Cargo</span><i class="fas fa-circle"></i><span>Empresa</span>
               </div>

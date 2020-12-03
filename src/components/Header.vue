@@ -46,7 +46,7 @@
             </a>
           </div>
       </div>
-      <a href="#" class="nossos-produtos">Cases</a>
+      <router-link to="/cases" class="nossos-produtos">Cases</router-link>
       <router-link to="/blog" class="nossos-produtos">Blog</router-link>
       <div class="item-menu">
         <router-link to="/atendimento">Atendimento</router-link>
@@ -130,7 +130,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cases</a>
+                <router-link class="nav-link" to="/cases">Cases</router-link>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>

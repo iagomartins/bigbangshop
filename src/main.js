@@ -16,6 +16,8 @@ import Atendimento from './components/Atendimento.vue'
 import Carreiras from './components/Carreiras.vue'
 import QuemSomos from './components/QuemSomos.vue'
 import TextosLegais from './components/TextosLegais.vue'
+import Contato from './components/Contato.vue'
+import Cases from './components/Cases.vue'
 
 Vue.use(VueRouter);
 
@@ -80,6 +82,14 @@ const router = new VueRouter({
     {
       path: '/textoslegais',
       component: TextosLegais
+    },
+    {
+      path: '/contato',
+      component: Contato
+    },
+    {
+      path: '/cases',
+      component: Cases
     }
   ]
 })

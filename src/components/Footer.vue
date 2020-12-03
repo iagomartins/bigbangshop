@@ -36,13 +36,13 @@
           <a href="#" class="mb-2">Help Desk</a>
           <a href="#" class="mb-2">Central de Ajuda</a>
           <a href="#" class="mb-2">Perguntas Frequentes</a>
-          <a href="#" class="mb-2">Contato</a>
+          <router-link to="/contato" class="mb-2">Contato</router-link>
         </div>
         <div class="inst-column">
           <strong class="mb-3 inst-title">Institucional</strong>
           <router-link to="/quemsomos" class="mb-2">Quem Somos</router-link>
           <router-link to="/blog" class="mb-2">Blog</router-link>
-          <a href="#" class="mb-2">Cases e Clientes</a>
+          <router-link to="/cases" class="mb-2">Cases e Clientes</router-link>
           <router-link to="/carreiras" class="mb-2">Carreiras</router-link>
           <a href="#" class="mb-2">Materiais</a>
         </div>
