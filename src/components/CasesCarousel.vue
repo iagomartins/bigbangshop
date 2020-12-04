@@ -1,7 +1,7 @@
 <template>
   <div class="slick-depoimentos">
     <h1 class="text-center">Depoimentos</h1>
-    <div class="container">
+    <div class="container cases-carousel">
     <VueSlickCarousel v-bind="settings">
       <div class="column-component">
           <div class="center-top-img">
@@ -67,7 +67,7 @@
   import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
  
   export default {
-    name: 'SlickCarousel',
+    name: 'CasesCarousel',
     components: { VueSlickCarousel },
     data() {
       return {
@@ -98,7 +98,7 @@
                 "settings": {
                     "centerMode": true,
                     centerPadding: '10px',
-                    "slidesToShow": 2,
+                    "slidesToShow": 1,
                     "slidesToScroll": 1,
                     "initialSlide": 1
                     }
@@ -120,9 +120,16 @@
 
 <style scoped>
     .slick-depoimentos {
-        background-color: #2351ff;
+        background-color: #F3F3F3;
         color: #fff;
         padding: 80px 0;
+    }
+    .slick-depoimentos h1 {
+        color: #1c1c1c;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        position: relative;
     }
     .column-component {
         transform: scale(0.8);
@@ -183,7 +190,7 @@
         content: '';
         width: 24px;
         height: 2px;
-        background: #00BAE9;
+        background: #2351ff;
         position: absolute;
         transform: translateY(60px);
         left: 49.5%;

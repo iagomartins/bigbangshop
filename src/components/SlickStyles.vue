@@ -9,7 +9,8 @@ export default {
 </script>
 
 <style>
-    .brands-carousel .slick-next::before, .brands-carousel .slick-prev::before {
+    .brands-carousel .slick-next::before, .brands-carousel .slick-prev::before,
+    .cases-carousel .slick-prev::before, .cases-carousel .slick-next::before {
         color: #2351FF;
     }
 </style>

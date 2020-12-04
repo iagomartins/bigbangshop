@@ -18,6 +18,7 @@ import QuemSomos from './components/QuemSomos.vue'
 import TextosLegais from './components/TextosLegais.vue'
 import Contato from './components/Contato.vue'
 import Cases from './components/Cases.vue'
+import Ebooks from './components/Ebooks.vue'
 
 Vue.use(VueRouter);
 
@@ -90,6 +91,10 @@ const router = new VueRouter({
     {
       path: '/cases',
       component: Cases
+    },
+    {
+      path: '/ebooks',
+      component: Ebooks
     }
   ]
 })

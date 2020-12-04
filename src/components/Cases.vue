@@ -25,36 +25,88 @@
                         <img src="../assets/Home/zak_logo.svg" alt="">
                     </div>
                     <div class="brand-image">
-                        <img src="../assets/Home/zak_logo.svg" alt="">
+                        <img src="../assets/Home/cordial.svg" alt="">
                     </div>
                     <div class="brand-image">
-                        <img src="../assets/Home/zak_logo.svg" alt="">
+                        <img src="../assets/Home/dash.svg" alt="">
                     </div>
                     <div class="brand-image">
-                        <img src="../assets/Home/zak_logo.svg" alt="">
+                        <img src="../assets/Home/logo_Flor_com_Amor.svg" alt="">
                     </div>
                     <div class="brand-image">
-                        <img src="../assets/Home/zak_logo.svg" alt="">
+                        <img src="../assets/Home/logo-cassotis-positiva.svg" alt="">
                     </div>
                     <div class="brand-image">
-                        <img src="../assets/Home/zak_logo.svg" alt="">
+                        <img src="../assets/Home/Klus.svg" alt="">
                     </div>
                     <div class="brand-image">
-                        <img src="../assets/Home/zak_logo.svg" alt="">
+                        <img src="../assets/Home/grupo-bamaq.svg" alt="">
                     </div>
                     <div class="brand-image">
-                        <img src="../assets/Home/zak_logo.svg" alt="">
+                        <img src="../assets/Home/casa_perola.svg" alt="">
                     </div>
                     <div class="brand-image">
-                        <img src="../assets/Home/zak_logo.svg" alt="">
+                        <img src="../assets/Home/autonomax.svg" alt="">
                     </div>
                     <div class="brand-image">
-                        <img src="../assets/Home/zak_logo.svg" alt="">
+                        <img src="../assets/Home/Frame.svg" alt="">
                     </div>
                 </VueSlickCarousel>
                 <SlickStyles/>
             </div>
         </section>
+        <section class="featured-cases">
+            <div class="container">
+                <h1 class="text-center section-title">Cases em destaque</h1>
+                <div class="cases-container">
+                    <a href="#" class="case">
+                        <div class="case-img">
+                            <img src="../assets/Cases/consorcios.png" alt="">
+                        </div>
+                        <span class="case-hash">Case Bamaq Consórcios</span>
+                        <strong>Transformando a experiência do consorciado</strong>
+                    </a>
+                    <a href="#" class="case">
+                        <div class="case-img">
+                            <img src="../assets/Cases/eletrica.png" alt="">
+                        </div>
+                        <span class="case-hash">Case Liberum Energia</span>
+                        <strong>Sistema de inteligência na indústria de energia</strong>
+                    </a>
+                    <a href="#" class="case">
+                        <div class="case-img">
+                            <img src="../assets/Cases/zak-case.png" alt="">
+                        </div>
+                        <span class="case-hash">Case ZAK</span>
+                        <strong>Reformulação do e-commerce</strong>
+                    </a>
+                </div>
+                <div class="cases-container">
+                    <a href="#" class="case">
+                        <div class="case-img">
+                            <img src="../assets/Cases/case-autonomax.png" alt="">
+                        </div>
+                        <span class="case-hash">Case AutonoMax</span>
+                        <strong>Inserindo a revolução digital no mercado de autônomos</strong>
+                    </a>
+                    <a href="#" class="case">
+                        <div class="case-img">
+                            <img src="../assets/Cases/case-cordial.png" alt="">
+                        </div>
+                        <span class="case-hash">Case Cordial Engenharia</span>
+                        <strong>Revolucionando a comercialização de imóveis</strong>
+                    </a>
+                    <a href="#" class="case">
+                        <div class="case-img">
+                            <img src="../assets/Cases/case-mater-dei.png" alt="">
+                        </div>
+                        <span class="case-hash">Case Hospital Mater Dei</span>
+                        <strong>Pensando na saúde de forma ágil</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <CasesCarousel/>
     </div>
 </template>
 
@@ -67,6 +119,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import SlickStyles from '../components/SlickStyles'
+import CasesCarousel from '../components/CasesCarousel.vue'
 
 export default {
     name: 'Cases',
@@ -75,7 +128,8 @@ export default {
         PageTitle,
         Breadcrumb,
         VueSlickCarousel,
-        SlickStyles
+        SlickStyles,
+        CasesCarousel
     },
     data() {
       return {
@@ -163,9 +217,55 @@ export default {
     .slick-carousel {
         background: #f3f3f3;
         padding: 70px 0;
+        margin-bottom: 100px;
     }
     .brand-image img {
         margin: auto;
+    }
+    .section-title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 0.25px;
+        color: #1C1C1C;
+        margin-bottom: 72px;
+    }
+    .case {
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        margin-bottom: 80px;
+    }
+    .case:hover {
+        text-decoration: none;
+    }
+    .case-img {
+        margin-bottom: 16px;
+    }
+    .case-img img {
+        max-width: 100%;
+    }
+    .case-hash {
+        color: #2351FF;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .case strong {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        color: #1c1c1c;
+    }
+    .cases-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.featured-cases {
+        margin-bottom: 80px;
     }
     @media (min-width: 1200px) {
         .top-section {
@@ -179,6 +279,11 @@ export default {
         }
         .image img {
             transform: translate(50px, -50px);
+        }
+        .cases-container {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
         }
     }
     @media (max-width: 1199px) {

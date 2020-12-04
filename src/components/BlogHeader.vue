@@ -12,7 +12,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-link" href="#">E-Books</a>
+                <router-link class="nav-link" to="/ebooks">E-Books</router-link>
                 <router-link class="nav-link" to="/ecommerce">E-Commerce</router-link>
                 <a class="nav-link" href="#">Finanças</a>
                 <a class="nav-link" href="#">Institucional</a>
