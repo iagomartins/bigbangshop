@@ -11,7 +11,7 @@
         <BannerEbooks/>
         <div class="container ebooks-list">
             <div class="ebooks-row">
-                <a href="#" class="ebook-content">
+                <router-link to="/ebook1" class="ebook-content">
                     <div class="image">
                         <img src="../assets/Blog/ebook-img.png" alt="">
                     </div>
@@ -22,7 +22,7 @@
                         </div>
                         <span class="btn btn-primary btn-ebook">Baixar e-book</span>
                     </div>
-                </a>
+                </router-link>
                 <a href="#" class="ebook-content">
                     <div class="image">
                         <img src="../assets/Blog/ebook-img.png" alt="">
@@ -103,7 +103,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .header {
         padding: 36px 0;
     }

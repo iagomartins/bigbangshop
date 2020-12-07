@@ -19,6 +19,8 @@ import TextosLegais from './components/TextosLegais.vue'
 import Contato from './components/Contato.vue'
 import Cases from './components/Cases.vue'
 import Ebooks from './components/Ebooks.vue'
+import EbookPage from './components/EbookPage.vue'
+import Brandings from './components/Brandings.vue'
 
 Vue.use(VueRouter);
 
@@ -95,6 +97,14 @@ const router = new VueRouter({
     {
       path: '/ebooks',
       component: Ebooks
+    },
+    {
+      path: '/ebook1',
+      component: EbookPage
+    },
+    {
+      path: '/brandings',
+      component: Brandings
     }
   ]
 })
