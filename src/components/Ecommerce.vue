@@ -83,7 +83,7 @@ export default {
         transform: translateY(65px);
     }
     .middle-section {
-        margin-top: -90px;
+        margin-top: -105px;
         z-index: 9;
     }
     .title-section {

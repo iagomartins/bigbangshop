@@ -6,19 +6,19 @@
                     <img src="../assets/Home/Appdev.svg" alt="">
                     <strong>App Development</strong>
                     <p>Ideal para quem quer iniciar suas vendas online com o melhor custo x benefício do mercado.</p>
-                    <a href="#">Saiba mais</a>
+                    <router-link to="/tecnologia/appdevelopment">Saiba mais</router-link>
                 </div>
                 <div class="column-component">
                     <img src="../assets/Home/Web.svg" alt="">
                     <strong>Sistemas Web</strong>
                     <p>A solução completa em e-commerce, com recursos de alta performance e design exclusivo.</p>
-                    <a href="#">Saiba mais</a>
+                    <router-link to="/tecnologia/sistemasweb">Saiba mais</router-link>
                 </div>
                 <div class="column-component">
                     <img src="../assets/Home/Sites.svg" alt="">
                     <strong>Sites Institucionais</strong>
                     <p>Crie seu próprio marketplace, um shopping online onde outras lojas podem vender.</p>
-                    <a href="#">Saiba mais</a>
+                    <router-link to="/tecnologia/sitesinstitucionais">Saiba mais</router-link>
                 </div>
             </div>
         </section>

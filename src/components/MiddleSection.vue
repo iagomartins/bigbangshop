@@ -6,19 +6,19 @@
                     <img src="../assets/Home/monitor.svg" alt="">
                     <strong>Loja Start</strong>
                     <p>Ideal para quem quer iniciar suas vendas online com o melhor custo x benefício do mercado.</p>
-                    <a href="#">Saiba mais</a>
+                    <router-link to="/ecommerce/lojastart">Saiba mais</router-link>
                 </div>
                 <div class="column-component">
                     <img src="../assets/Home/bag.svg" alt="">
                     <strong>Full Commerce</strong>
                     <p>A solução completa em e-commerce, com recursos de alta performance e design exclusivo.</p>
-                    <a href="#">Saiba mais</a>
+                    <router-link to="/ecommerce/fullcommerce">Saiba mais</router-link>
                 </div>
                 <div class="column-component">
                     <img src="../assets/Home/market.svg" alt="">
                     <strong>Marketplace</strong>
                     <p>Crie seu próprio marketplace, um shopping online onde outras lojas podem vender.</p>
-                    <a href="#">Saiba mais</a>
+                    <router-link to="/ecommerce/marketplace">Saiba mais</router-link>
                 </div>
             </div>
         </section>

@@ -21,6 +21,7 @@ import Cases from './components/Cases.vue'
 import Ebooks from './components/Ebooks.vue'
 import EbookPage from './components/EbookPage.vue'
 import Brandings from './components/Brandings.vue'
+import './styles.css'
 
 Vue.use(VueRouter);
 

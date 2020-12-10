@@ -52,7 +52,6 @@
                         <img src="../assets/Home/Frame.svg" alt="">
                     </div>
                 </VueSlickCarousel>
-                <SlickStyles/>
             </div>
         </section>
         <section class="featured-cases">
@@ -118,7 +117,6 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
-import SlickStyles from '../components/SlickStyles'
 import CasesCarousel from '../components/CasesCarousel.vue'
 
 export default {
@@ -128,7 +126,6 @@ export default {
         PageTitle,
         Breadcrumb,
         VueSlickCarousel,
-        SlickStyles,
         CasesCarousel
     },
     data() {

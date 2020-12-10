@@ -3,7 +3,7 @@
     <div class="menu-container desktop">
       <Logo/>
       <div class="row menu-content">
-      <a href="#" class="nossos-produtos">Nossos Produtos<img class="menu-dots" src="../assets/dots.svg" alt=""></a>
+      <a href="#" class="primary-link">Nossos Produtos<img class="menu-dots" src="../assets/dots.svg" alt=""></a>
       <div class="item-menu">
         <router-link to="/ecommerce" class="primary-link">Ecommerce</router-link>
           <div class="submenu">
@@ -46,10 +46,10 @@
             </a>
           </div>
       </div>
-      <router-link to="/cases" class="nossos-produtos">Cases</router-link>
-      <router-link to="/blog" class="nossos-produtos">Blog</router-link>
+      <router-link to="/cases" class="primary-link">Cases</router-link>
+      <router-link to="/blog" class="primary-link">Blog</router-link>
       <div class="item-menu">
-        <router-link to="/atendimento">Atendimento</router-link>
+        <router-link to="/atendimento" class="primary-link">Atendimento</router-link>
           <div class="submenu">
             <a href="#">
               <span class="link-titulo">Help Desk</span>
@@ -73,7 +73,7 @@
     </div>
     </div>
         <nav class="navbar navbar-expand-lg navbar-light mobile-menu">
-          <a class="navbar-brand" href="#"><Logo/></a>
+          <router-link class="navbar-brand" to="/"><Logo/></router-link>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -225,6 +225,9 @@ a {
   cursor: pointer;
   position: relative;
 }
+.primary-link {
+  line-height: 45px;
+}
 .item-menu:hover .submenu {
   display: flex;
   flex-direction: column;
@@ -321,7 +324,7 @@ a {
 }
 .menu-dots {
   position: absolute;
-  transform: translateY(25px) translateX(-70px);
+  transform: translateY(35px) translateX(-70px);
 }
 @media (min-width: 1200px) {
   .desktop {

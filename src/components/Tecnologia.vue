@@ -64,7 +64,7 @@ export default {
 
 <style scoped>
     .middle-section {
-        margin-top: -90px;
+        margin-top: -105px;
         z-index: 9;
     }
     .title-section {

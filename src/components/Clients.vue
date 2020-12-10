@@ -35,7 +35,7 @@
                 <img src="../assets/Home/Frame.svg" alt="">
             </div>
         </div>
-        <a href="#" class="clients-link">Conheça nossos cases e clientes</a>
+        <router-link to="/cases" class="clients-link">Conheça nossos cases e clientes</router-link>
     </div>
 
 </template>
