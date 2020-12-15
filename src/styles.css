@@ -52,3 +52,47 @@ body {
 .cases-carousel .slick-next::before {
   color: #2351ff;
 }
+
+.slick-next,
+.slick-prev {
+  z-index: 9;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next:before {
+  content: "\f054";
+  font-family: "fontawesome";
+}
+
+.slick-prev:before {
+  content: "\f053";
+  font-family: "fontawesome";
+}
+
+@media (min-width: 1200px) {
+  .slick-depoimentos .slick-next {
+    transform: translate(0);
+    right: 32%;
+    width: auto;
+    height: auto;
+    z-index: 9;
+  }
+  .slick-depoimentos .slick-next::before,
+  .slick-depoimentos .slick-prev::before {
+    font-size: 36px;
+  }
+  .slick-depoimentos .slick-prev {
+    transform: translate(0);
+    left: 32%;
+    width: auto;
+    height: auto;
+    z-index: 9;
+  }
+}

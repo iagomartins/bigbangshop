@@ -117,12 +117,18 @@
                 </div>
             </div>
         </section>
+        <RatingForm />
     </div>
 </template>
 
 <script>
+import RatingForm from '../components/RatingForm.vue'
+
 export default {
-    name: 'EbookPage'
+    name: 'EbookPage',
+    components: {
+        RatingForm
+    }
 }
 </script>
 
@@ -399,6 +405,9 @@ export default {
         text-align: center;
         width: 100%;
         display: block;
+    }
+    .e-book-info {
+        margin-bottom: 100px;
     }
     @media (min-width: 1200px) {
         .ebook-image {

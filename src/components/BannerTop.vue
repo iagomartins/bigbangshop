@@ -1,6 +1,6 @@
 <template>
   <div class="banner-top">
-      <div class="container desktop">
+      <div class="container">
         <h1>Soluções completas em e-commerce e tecnologia</h1>
         <a href="#" class="link-banner">Conheça nossos produtos e serviços</a>
         <p>Já é cliente Big Bang? <a href="#">Acesse a Área do Cliente.</a></p>
@@ -15,12 +15,15 @@ export default {
 </script>
 
 <style scoped>
-    .desktop {
-        display: none;
-    }
     .banner-top {
         margin-bottom: 85px;
         margin-top: 135px;
+        background-image: url('../assets/Home/banner-topo-desktop.png');
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 66.7vh;
+        display: flex;
+        align-items: center;
     }
     .banner-top h1, .banner-top p {
         color: #fff;
@@ -46,19 +49,12 @@ export default {
         margin-bottom: 30px;
     }
     @media (min-width: 1200px) {
-        .desktop {
-            display: block;
-        }
         .banner-top h1 {
             font-size: 40px;
             line-height: 44px;
         }
         .banner-top {
             margin-top: 134px;
-            background-image: url('../assets/Home/banner-topo-desktop.png');
-            background-repeat: no-repeat;
-            width: 100vw;
-            height: 66.7vh;
         }
         .banner-top .container {
             display: flex;

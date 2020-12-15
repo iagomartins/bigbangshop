@@ -4,7 +4,7 @@
             <h1>Blog</h1>
         </div>
         <div class="blog">
-            <a href="#" class="blog-item">
+            <router-link to="/blog/blogpost" class="blog-item">
                 <div class="blog-img">
                     <img src="../assets/Home/blog1.png">
                 </div>
@@ -12,7 +12,7 @@
                     <strong>O novo normal: como os lojistas devem se preparar e os desafios a longo prazo</strong>
                     <p>01 jan 2020</p>
                 </div>
-            </a>
+            </router-link>
             <a href="#" class="blog-item">
                 <div class="blog-img">
                     <img src="../assets/Home/blog2.png">
@@ -75,6 +75,9 @@ export default {
     .blog-img {
         margin-bottom: 24px;
         border-radius: 8px;
+    }
+    .blog-img img {
+        max-width: 100%;
     }
     .blog-text strong {
         margin-bottom: 16px;
